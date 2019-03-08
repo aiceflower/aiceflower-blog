@@ -12,7 +12,7 @@ menu:
   url: /
   icon:
 - page: 后端
-  url: /java
+  url: /categories/后端
   icon:
 - page: 工具
   url: /
@@ -99,7 +99,7 @@ arch_config:
 
 ## 标签云设置
 tagcloud:
-  tag3d: true
+  tag3d: false
   textColour: '#444'
   outlineMethod: 'block'
   outlineColour: '#FFDAB9'
@@ -107,7 +107,7 @@ tagcloud:
   freezeActive: true
   frontSelect: true
   reverse: true
-  wheelZoom: true
+  wheelZoom: false
 
 ## 友链设置
 links:
@@ -148,9 +148,9 @@ bootstrap:
 ## ICON配置
 fontAwesome:
 
-## 文章过期提醒功能
+## 文章过期提醒功能,设置0关闭功能
 warning:
-  days: 300
+  days: 0
   text: '本文于%d天之前发表，文中内容可能已经过时。'
 
 ## 文章内声明
@@ -225,8 +225,8 @@ uyan:
 
 ## 网站访客统计
 visit_counter:
-   site: false
-   page: false
+   site: true
+   page: true
 
 ## 网站访问统计分析
 
@@ -249,6 +249,23 @@ baidu_site_verification:
 baidu_push: false
 
 #网站主题配置
-since: 2017
+since: 2019-03
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all
 version: 1.2.1
+
+post_wordcount:
+  item_text: true
+  wordcount: true
+  min2read: true
+
+live2d:
+	enable: true
+	scriptFrom: local
+	model: 
+		use: live2d-widget-model-miku #模型选择
+	display: 
+		position: right  #模型位置
+		width: 150       #模型宽度
+		height: 300      #模型高度
+	mobile: 
+		show: false      #是否在手机端显示
