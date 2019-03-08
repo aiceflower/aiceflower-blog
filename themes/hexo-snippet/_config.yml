@@ -22,7 +22,7 @@ menu:
   icon:
 
 ## favicon
-favicon: /favicon.ico
+favicon: img/favicon.ico
 
 ## Feed
 rss: /atom.xml
