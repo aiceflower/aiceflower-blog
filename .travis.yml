@@ -31,8 +31,9 @@ before_script:
   - sed -i'' "s~ git@github.com:aiceflower/aiceflower.github.io.git~ https://${accessToken}@github.com/aiceflower/aiceflower.github.io.git~" _config.yml
   - cat _config.yml
   - ls node_modules | grep hexo
-  - ls -l themes/snippet/layout/
   - ls -l themes/
+ 
+  
 script:
   - hexo clean 
   - hexo g
