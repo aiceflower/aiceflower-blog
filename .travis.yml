@@ -27,8 +27,8 @@ before_script:
   - chmod +x travis.sh
   - git config user.name "aiceflower"
   - git config user.email "aiceflower@sina.com"
-  - sed -i'' "s~ git@github.com:aiceflower/aiceflower.github.io.git~ https://${blog-access-token}@github.com/aiceflower/aiceflower.github.io.git~" _config.yml
- -  cat _config.yml
+  - sed -i'' "s~ git@github.com:aiceflower/aiceflower.github.io.git~ https://${aiceflower-token}@github.com/aiceflower/aiceflower.github.io.git~" _config.yml
+  - cat _config.yml
 
 script:
   - hexo clean 
