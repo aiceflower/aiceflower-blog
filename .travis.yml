@@ -22,8 +22,8 @@ install:
 #  - travis login --pro --github-token ${GH_TOKEN}
 
 before_script:
-  - export TZ='Asia/Shanghai'
-  - npm install -g gulp
+# - export TZ='Asia/Shanghai'
+# - npm install -g gulp
   - chmod +x travis.sh
   - git config user.name "aiceflower"
   - git config user.email "aiceflower@sina.com"
