@@ -77,7 +77,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #主题
-theme: snippet
+theme: hexo-snippet
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
