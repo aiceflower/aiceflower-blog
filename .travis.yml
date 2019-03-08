@@ -27,8 +27,10 @@ before_script:
   - chmod +x travis.sh
   - git config user.name "aiceflower"
   - git config user.email "aiceflower@sina.com"
+  - git config --global core.autocrlf false
   - sed -i'' "s~ git@github.com:aiceflower/aiceflower.github.io.git~ https://${accessToken}@github.com/aiceflower/aiceflower.github.io.git~" _config.yml
   - cat _config.yml
+  - ls node_modules | grep hexo
 
 script:
   - hexo clean 
