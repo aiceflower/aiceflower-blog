@@ -9,20 +9,20 @@ menu:
   url: /
   icon:
 - page: 前端
-  url: /categories/前端/
+  url: /
   icon:
 - page: 后端
-  url: /categories/后端/
+  url: /java
   icon:
 - page: 工具
-  url: /categories/工具/
+  url: /
   icon: 
 - page: 时间轴
   url: /archives/
   icon:
 
 ## favicon
-favicon: img/favicon.ico
+favicon: /img/favicon.ico
 
 ## Feed
 rss: /atom.xml
