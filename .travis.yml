@@ -1,0 +1,52 @@
+language: node_js
+node_js: stable
+
+sudo: false
+
+#cache
+cache:
+  directories:
+    - "node_modules"
+
+notifications:
+  email:
+    recipients:
+      - aiceflower@sina.com
+    on_success: never
+    on_failure: always
+
+# S: Build Lifecycle
+install:
+  - npm install
+#  - gem install travis
+#  - travis login --pro --github-token ${GH_TOKEN}
+
+before_script:
+  - export TZ='Asia/Shanghai'
+  - npm install -g gulp
+  - chmod +x _travis.sh
+  - git config user.name "aiceflower"
+  - git config user.email "aiceflower@sina.com"
+  - sed -i "s~ git@github.com:aiceflower/aiceflower.github.io.git~ https://${blog-access-token}@github.com/aiceflower/aiceflower.github.io.git~" _config.yml
+
+script:
+  - hexo clean 
+  - hexo g
+  - hexo d
+
+after_success:
+ # - LAST_BUILD_NUMBER=68
+ # - for i in $(seq 1 $LAST_BUILD_NUMBER ); do  travis logs $i --delete --force ; done
+
+after_script:
+  - ./travis.sh
+
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
+env:
+ global:
+   - GH_REF: github.com/aiceflower/blog-aiceflower.git
+
