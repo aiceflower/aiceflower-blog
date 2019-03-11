@@ -15,7 +15,7 @@ menu:
   url: /categories/后端
   icon:
 - page: 工具
-  url: /
+  url: /categories/tools
   icon: 
 - page: 时间轴
   url: /archives/
